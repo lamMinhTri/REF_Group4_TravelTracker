@@ -97,7 +97,7 @@
       <AssemblyReference>WindowsFormsIntegration</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <StateMachine InitialState="{x:Reference __ReferenceID2}" sap2010:Annotation.AnnotationText="[Process title]&#xA;[Process description]&#xA;[Additional information (e.g., author, contact information and applications involved and required external setup)]" DisplayName="General Business Process" sap:VirtualizedContainerService.HintSize="1479.2,602.4" sap2010:WorkflowViewState.IdRef="StateMachine_1">
+  <StateMachine InitialState="{x:Reference __ReferenceID2}" sap2010:Annotation.AnnotationText="[Process title]&#xA;[Process description]&#xA;[Additional information (e.g., author, contact information and applications involved and required external setup)]" DisplayName="General Business Process" sap:VirtualizedContainerService.HintSize="1257.6000000000001,437.6" sap2010:WorkflowViewState.IdRef="StateMachine_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -562,7 +562,7 @@
                 <Transition DisplayName="System Exception (failed initialization)" sap:VirtualizedContainerService.HintSize="448.8,802.4" sap2010:WorkflowViewState.IdRef="Transition_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:PointCollection x:Key="ConnectorLocation">396,146.32 426,146.32 426,95.52 560,95.52</av:PointCollection>
+                      <av:PointCollection x:Key="ConnectorLocation">396,146.32 426,146.32 426,95.16 560,95.16</av:PointCollection>
                       <x:Int32 x:Key="SrcConnectionPointIndex">28</x:Int32>
                       <x:Int32 x:Key="DestConnectionPointIndex">33</x:Int32>
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -663,7 +663,7 @@
         <Transition DisplayName="T1" sap:VirtualizedContainerService.HintSize="448.8,490.4" sap2010:WorkflowViewState.IdRef="Transition_8">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:PointCollection x:Key="ConnectorLocation">630,244 630,214.00000000000003 660,214.00000000000003 660,152.8</av:PointCollection>
+              <av:PointCollection x:Key="ConnectorLocation">630,244 630,214 660,214 660,152.8</av:PointCollection>
               <x:Int32 x:Key="SrcConnectionPointIndex">38</x:Int32>
               <x:Int32 x:Key="DestConnectionPointIndex">39</x:Int32>
             </scg:Dictionary>
@@ -671,9 +671,7 @@
           <Transition.To>
             <x:Reference>__ReferenceID1</x:Reference>
           </Transition.To>
-          <Transition.Condition>
-            <Literal x:TypeArguments="x:Boolean" DisplayName="Literal" Value="True" />
-          </Transition.Condition>
+          <Transition.Condition>True</Transition.Condition>
         </Transition>
       </State.Transitions>
     </State>
